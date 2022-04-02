@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Spring Boot Starter Data Access Control [DEMO APP]
+  datasource:
+    url: jdbc:mysql://localhost:3308/dacdb?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    root: info
+

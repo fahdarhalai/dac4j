@@ -1,0 +1,20 @@
+package com.github.fahdarhalai.demodac.service.mapper;
+
+import com.github.fahdarhalai.demodac.domain.StatisticsEntity;
+import com.github.fahdarhalai.demodac.service.dto.StatisticsDto;
+import com.github.fahdarhalai.demodac.service.mapper.common.AbstractMapper;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.ReportingPolicy;
+
+@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
+public interface StatisticsMapper extends AbstractMapper<StatisticsEntity, StatisticsDto> {
+
+    @Override
+    @Mapping(target = "cityId", expression = "java(mapCityToCityId(entity))")
+    StatisticsDto toDto(StatisticsEntity entity);
+
+    default Long mapCityToCityId(StatisticsEntity statistics) {
+        return statistics.getCity().getId();
+    }
+}
