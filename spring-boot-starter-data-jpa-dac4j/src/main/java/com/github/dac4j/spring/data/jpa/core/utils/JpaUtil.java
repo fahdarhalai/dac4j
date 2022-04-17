@@ -86,6 +86,6 @@ public class JpaUtil {
     public static String getColumnName(SingularAttribute<?,?> singularAttribute, String defaultColumnName, EntityManager em) {
         return singularAttribute == null
                 ? defaultColumnName
-                : Optional.of(getColumnName(singularAttribute.getName(), em)).orElse(defaultColumnName);
+                : Optional.ofNullable(getColumnName(singularAttribute.getName(), em)).orElse(defaultColumnName);
     }
 }
