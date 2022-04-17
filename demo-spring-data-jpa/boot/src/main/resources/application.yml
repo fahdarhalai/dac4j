@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: Data Access Control for Java (DAC4J) [DEMO APP]
+  datasource:
+    url: jdbc:mysql://localhost:3308/dac4jdemodb?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: MYSQL
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: true
+        format_sql: true
+
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        data: debug
+    com:
+      github:
+          dac4j: debug
+

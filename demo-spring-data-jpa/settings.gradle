@@ -1,0 +1,6 @@
+rootProject.name = 'demo-spring-data-jpa'
+include ':api'
+include ':service'
+include ':domain'
+include ':dao'
+include ':boot'
