@@ -25,3 +25,5 @@
    then:
    
    `java -jar ./boot/build/libs/boot-0.0.1-SNAPSHOT.jar`
+   
+   ![Swagger UI](https://user-images.githubusercontent.com/41004675/163738238-3f7981eb-2fb7-4787-bfc1-4a09186cf8b2.png)
