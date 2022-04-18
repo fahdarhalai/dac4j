@@ -1,4 +1,4 @@
-rootProject.name = 'demo-spring-data-jpa'
+rootProject.name = 'spring-boot-starter-data-jpa-dac4j-demo'
 include ':api'
 include ':service'
 include ':domain'

@@ -4,6 +4,14 @@ plugins {
     id 'java'
 }
 
+def appVersion = "0.0.1-SNAPSHOT"
+def appGroup = 'com.github.dac4j'
+def appSourceCompatibility = '1.8'
+
+group = appGroup
+version = appVersion
+sourceCompatibility = appSourceCompatibility
+
 repositories {
     mavenCentral()
     mavenLocal()
@@ -16,9 +24,9 @@ subprojects {
     apply plugin: 'java-library'
     apply plugin: 'idea'
 
-    group = 'com.github.dac4j'
-    version = '0.0.1-SNAPSHOT'
-    sourceCompatibility = '1.8'
+    group = appGroup
+    version = appVersion
+    sourceCompatibility = appSourceCompatibility
 
     repositories {
         mavenCentral()
