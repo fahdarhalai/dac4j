@@ -4,6 +4,11 @@ import com.github.dac4j.spring.data.jpa.service.dto.DataAccessControlDto;
 
 import java.util.List;
 
+/**
+ * Data access control service interface.
+ *
+ * @author Fahd Arhalai
+ */
 public interface DataAccessControlService {
 
     /**

@@ -21,6 +21,8 @@ import java.lang.annotation.Target;
  * DAC4J verifies the existence of explicit table names through the {@link javax.persistence.Table}
  * annotation, otherwise it makes use of {@link org.hibernate.boot.model.naming.PhysicalNamingStrategy}
  * to deduce the implicit table name.
+ *
+ * @author Fahd Arhalai
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

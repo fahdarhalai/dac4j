@@ -14,6 +14,11 @@ import javax.persistence.Table;
 import javax.persistence.metamodel.SingularAttribute;
 import java.util.Optional;
 
+/**
+ * JPA utility class for providing JPA entity information and/or database metadata.
+ *
+ * @author Fahd Arhalai
+ */
 @SuppressWarnings("rawtypes")
 public class JpaUtil {
 

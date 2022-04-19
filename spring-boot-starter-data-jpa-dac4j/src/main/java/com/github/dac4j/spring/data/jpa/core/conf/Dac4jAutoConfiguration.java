@@ -13,6 +13,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 
+/**
+ * DAC4J auto configuration class.
+ *
+ * @author Fahd Arhalai
+ */
 @Configuration
 @ComponentScan("com.github.dac4j.spring.data.jpa")
 @EnableJpaRepositories(basePackages = "com.github.dac4j.spring.data.jpa.dao")
@@ -25,8 +30,6 @@ public class Dac4jAutoConfiguration {
 
     @Bean(name = "jpaQueryMethodFactory")
     public AccessControlJpaQueryMethodFactory jpaQueryMethodFactory() {
-        //LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
-        //SessionFactory sessionFactory = sessionFactoryBean.getMetadataSources().buildMetadata().getSessionFactoryBuilder().build();
         return new AccessControlJpaQueryMethodFactory(PersistenceProvider.fromEntityManager(entityManager));
     }
 

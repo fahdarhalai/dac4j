@@ -6,6 +6,11 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/**
+ * Data access control repository.
+ *
+ * @author Fahd Arhalai
+ */
 @Repository
 public interface DataAccessControlRepository extends JpaRepository<DataAccessControlEntity, Long> {
 
