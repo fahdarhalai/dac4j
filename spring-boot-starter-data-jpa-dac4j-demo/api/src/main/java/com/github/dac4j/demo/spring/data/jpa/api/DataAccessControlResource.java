@@ -1,7 +1,8 @@
-package com.github.dac4j.spring.data.jpa.api;
+package com.github.dac4j.demo.spring.data.jpa.api;
 
 import com.github.dac4j.spring.data.jpa.service.DataAccessControlService;
 import com.github.dac4j.spring.data.jpa.service.dto.DataAccessControlDto;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,11 +13,8 @@ import java.util.List;
 @RequestMapping("/api/data-access-control")
 public class DataAccessControlResource {
 
-    private final DataAccessControlService service;
-
-    public DataAccessControlResource(DataAccessControlService dataAccessControlService) {
-        this.service = dataAccessControlService;
-    }
+    @Autowired
+    private DataAccessControlService service;
 
     @GetMapping
     public ResponseEntity<List<DataAccessControlDto>> getAllDac() {

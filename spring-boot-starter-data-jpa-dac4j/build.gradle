@@ -7,13 +7,21 @@ group = 'com.github.dac4j'
 version = '1.0.0'
 sourceCompatibility = '1.8'
 
+ext {
+    set('queryDslVersion', '4.4.0')
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.6.6'
-    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.6'
+    annotationProcessor 'org.springframework.boot:spring-boot-starter-data-jpa:2.6.6'
+
+    api "com.querydsl:querydsl-jpa:${queryDslVersion}"
+    implementation "com.querydsl:querydsl-apt:${queryDslVersion}"
+    annotationProcessor "com.querydsl:querydsl-apt:${queryDslVersion}:jpa"
 
     compileOnly 'org.projectlombok:lombok:1.18.22'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
