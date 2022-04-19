@@ -14,6 +14,8 @@ import java.util.Optional;
  * on {@link SimpleJpaRepository}.
  * @param <T> Entity class type
  * @param <ID> Entity id class type
+ *
+ * @author Fahd Arhalai
  */
 public class AccessControlSimpleJpaRepository<T, ID> extends SimpleJpaRepository<T, ID> {
 

@@ -11,6 +11,11 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
+/**
+ * Data access control service implementation.
+ *
+ * @author Fahd Arhalai
+ */
 @Service
 public class DataAccessControlServiceImpl implements DataAccessControlService {
 

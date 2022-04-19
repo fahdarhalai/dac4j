@@ -5,6 +5,8 @@ data/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+!**/src/main/**/data/
+!**/src/test/**/data/
 
 ### STS ###
 .apt_generated

@@ -7,6 +7,8 @@ import javax.persistence.*;
 /**
  * The main access control persistence entity. It binds source table records to the target
  * table records upon which the former have visibility, and thus can perform DML queries.
+ *
+ * @author Fahd Arhalai
  */
 @Entity
 @Table(name = "DATA_ACCESS_CONTROL")

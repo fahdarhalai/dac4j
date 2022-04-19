@@ -1,4 +1,4 @@
-package com.github.dac4j.spring.data.jpa.service.mapper.common;
+package com.github.dac4j.demo.spring.data.jpa.service.mapper.common;
 
 import org.mapstruct.MappingTarget;
 

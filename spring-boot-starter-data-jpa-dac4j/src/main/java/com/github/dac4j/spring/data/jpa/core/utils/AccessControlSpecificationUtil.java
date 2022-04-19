@@ -16,6 +16,11 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Access control specification utility for building JPA specifications.
+ *
+ * @author Fahd Arhalai
+ */
 @SuppressWarnings("rawtypes")
 public final class AccessControlSpecificationUtil {
 

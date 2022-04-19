@@ -2,6 +2,11 @@ package com.github.dac4j.spring.data.jpa.service.dto;
 
 import lombok.Data;
 
+/**
+ * Data access control DTO object.
+ *
+ * @author Fahd Arhalai
+ */
 @Data
 public class DataAccessControlDto {
 
