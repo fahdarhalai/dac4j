@@ -1,4 +1,6 @@
 # About DAC4J
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
 The Data Access Control for Java (DAC4J) serves as a simple but efficient generic extension over your data layer which provides users controlled access on sensitive data records to perform read or read-write operations.
 
 DAC4J aims to be data store agnostic by providing implementations for various datastore apis (JPA, JDBC, Elasticsearch, ...).
